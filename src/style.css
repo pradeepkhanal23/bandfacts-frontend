@@ -13,7 +13,7 @@ body {
 }
 
 .card {
-  @apply rounded-lg bg-white p-6 shadow-md text-lg;
+  @apply rounded-lg bg-white p-6 shadow-lg text-lg;
 }
 
 .modal {
@@ -28,8 +28,20 @@ body {
   @apply block  font-semibold mb-2;
 }
 
+.user-name {
+  @apply text-zinc-500;
+}
+
+.title {
+  @apply text-sky-700;
+}
+
+.paragraph {
+  @apply text-zinc-700;
+}
+
 .tag {
-  @apply rounded-full px-6 py-2 text-sm text-white;
+  @apply rounded-lg px-6 py-2 text-sm text-white;
 }
 
 .btn {
@@ -37,7 +49,7 @@ body {
 }
 
 .btn-delete {
-  @apply absolute -top-1 -right-1 bg-red-300 text-white flex items-center  justify-center h-5 w-5;
+  @apply absolute -top-2 -right-2 bg-red-300 text-white rounded-full flex items-center  justify-center h-5 w-5;
 }
 
 .form-input,
