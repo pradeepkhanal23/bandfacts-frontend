@@ -26,13 +26,23 @@ module.exports = {
         include: path.resolve(__dirname, "src"),
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
     ],
   },
   plugins: [
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       title: "BandFacts FullStack App",
-      template: "./src/template.html",
+      template: "./src/index.html",
       filename: "index.html",
     }),
   ],
