@@ -16,8 +16,16 @@ body {
   @apply rounded-lg bg-white p-6 shadow-md text-lg;
 }
 
+.modal {
+  @apply fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50  justify-center items-center;
+}
+
 .user-profile-box {
   @apply text-white rounded-full h-8 w-8 flex items-center justify-center;
+}
+
+.text-label {
+  @apply block  font-semibold mb-2;
 }
 
 .tag {
@@ -29,7 +37,7 @@ body {
 }
 
 .btn-delete {
-  @apply bg-red-300 text-white flex items-center rounded-full justify-center h-6 w-6;
+  @apply absolute -top-1 -right-1 bg-red-300 text-white flex items-center  justify-center h-5 w-5;
 }
 
 .form-input,
